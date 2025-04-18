@@ -1,4 +1,7 @@
 package Handlers;
 
-public class InvalidOperationException {
+public class InvalidOperationException extends RuntimeException {
+    public InvalidOperationException(String message) {
+        super(message);
+    }
 }
